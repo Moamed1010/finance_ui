@@ -1,14 +1,13 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../core/routing/app_routes.dart';
-import '../../core/styling/app_assets.dart';
-import '../../core/styling/app_styles.dart';
-import '../../core/widgets/primary_button_widget.dart';
-import '../../core/widgets/primary_outline_button_widget.dart';
-import '../../core/widgets/spacing_widget.dart';
+import '../../../../core/routing/app_routes.dart';
+import '../../../../core/styling/app_assets.dart';
+import '../../../../core/styling/app_styles.dart';
+import '../../../../core/widgets/primary_button_widget.dart';
+import '../../../../core/widgets/primary_outline_button_widget.dart';
+import '../../../../core/widgets/spacing_widget.dart';
 
 class OnBoardingScrean extends StatelessWidget {
   const OnBoardingScrean({super.key});
@@ -45,11 +44,16 @@ class OnBoardingScrean extends StatelessWidget {
                 buttonWidth: 331.w,
               ),
               const HeightSpace(46),
-              Text(
-                "Continue as a guest",
-                style: AppStyles.black15BoldStyle.copyWith(
-                  decoration: TextDecoration.underline,
-                  color: const Color(0xff202955),
+              InkWell(
+                onTap: () {
+                  GoRouter.of(context).pushNamed(AppRoutes.mainScreen);
+                },
+                child: Text(
+                  "Continue as a guest",
+                  style: AppStyles.black15BoldStyle.copyWith(
+                    decoration: TextDecoration.underline,
+                    color: const Color(0xff202955),
+                  ),
                 ),
               ),
             ],

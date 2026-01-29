@@ -1,11 +1,12 @@
+import 'package:financename/features/main/presentation/main_screen.dart';
 import 'package:go_router/go_router.dart';
-import '../../features/auth/screens/creat_new_password_screen.dart';
-import '../../features/auth/screens/forget_password_screen.dart';
-import '../../features/auth/screens/login_screen.dart';
-import '../../features/auth/screens/password_changed_screen.dart';
-import '../../features/auth/screens/register_screen.dart';
-import '../../features/on_boarding_screen/on_boarding_screan.dart';
-import '../../features/verify_otp/verify_otp_screen.dart';
+import '../../features/auth/presentation/screens/creat_new_password_screen.dart';
+import '../../features/auth/presentation/screens/forget_password_screen.dart';
+import '../../features/auth/presentation/screens/login_screen.dart';
+import '../../features/auth/presentation/screens/password_changed_screen.dart';
+import '../../features/auth/presentation/screens/register_screen.dart';
+import '../../features/on_boarding_screen/presentation/screens/on_boarding_screan.dart';
+import '../../features/auth/presentation/screens/verify_otp_screen.dart';
 import 'app_routes.dart';
 
 class RouterGenrationConfig {
@@ -46,6 +47,11 @@ class RouterGenrationConfig {
         path: AppRoutes.verifyOtpScreen,
         name: AppRoutes.verifyOtpScreen,
         builder: (context, state) => const VerifyOtpScreen(),
+      ),
+      GoRoute(
+        path: AppRoutes.mainScreen,
+        name: AppRoutes.mainScreen,
+        builder: (context, state) => const MainScreen(),
       ),
     ],
   );

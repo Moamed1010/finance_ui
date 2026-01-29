@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-import '../../../core/styling/app_assets.dart';
+import '../../../../../core/styling/app_assets.dart';
 import 'custom_icon_button.dart';
 
 class SocialLoginButtons extends StatelessWidget {

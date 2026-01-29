@@ -3,9 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
-import '../../../core/routing/app_routes.dart';
-import '../../../core/styling/app_colors.dart';
-import '../../../core/styling/app_styles.dart';
+import '../../../../../core/routing/app_routes.dart';
+import '../../../../../core/styling/app_colors.dart';
+import '../../../../../core/styling/app_styles.dart';
 
 class CustomPinCode extends StatelessWidget {
   const CustomPinCode({super.key, required this.pinCodeController});

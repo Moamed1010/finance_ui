@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../core/routing/app_routes.dart';
-import '../../../core/styling/app_styles.dart';
-import '../../../core/widgets/custom_text_field.dart';
-import '../../../core/widgets/primary_button_widget.dart';
-import '../../../core/widgets/spacing_widget.dart';
-import '../../../core/widgets/back_button_widget.dart';
-import '../widgets/custom_or_login_widget.dart';
-import '../../../core/widgets/custom_rich_text.dart';
-import '../widgets/social_login_buttons.dart';
+import '../../../../core/routing/app_routes.dart';
+import '../../../../core/styling/app_styles.dart';
+import '../../../../core/widgets/custom_text_field.dart';
+import '../../../../core/widgets/primary_button_widget.dart';
+import '../../../../core/widgets/spacing_widget.dart';
+import '../../../../core/widgets/back_button_widget.dart';
+import 'widgets/custom_or_login_widget.dart';
+import '../../../../core/widgets/custom_rich_text.dart';
+import 'widgets/social_login_buttons.dart';
 
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});

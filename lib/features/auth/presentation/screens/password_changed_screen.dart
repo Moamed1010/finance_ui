@@ -4,11 +4,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../core/routing/app_routes.dart';
-import '../../../core/styling/app_assets.dart';
-import '../../../core/styling/app_styles.dart';
-import '../../../core/widgets/primary_button_widget.dart';
-import '../../../core/widgets/spacing_widget.dart';
+import '../../../../core/routing/app_routes.dart';
+import '../../../../core/styling/app_assets.dart';
+import '../../../../core/styling/app_styles.dart';
+import '../../../../core/widgets/primary_button_widget.dart';
+import '../../../../core/widgets/spacing_widget.dart';
 
 class PasswordChangedScreen extends StatelessWidget {
   const PasswordChangedScreen({super.key});
