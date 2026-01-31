@@ -1,6 +1,7 @@
 import 'package:financename/core/styling/app_colors.dart';
 import 'package:financename/features/card/presentation/card_screen.dart';
 import 'package:financename/features/home/presentation/home_screen.dart';
+import 'package:financename/features/profile/presentation/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -27,11 +28,7 @@ class _MainScreenState extends State<MainScreen> {
       color: Colors.greenAccent,
     ),
     const CardScreen(),
-    Container(
-      width: double.infinity,
-      height: double.infinity,
-      color: Colors.deepPurpleAccent,
-    ),
+    const ProfileScreen(),
   ];
   @override
   Widget build(BuildContext context) {

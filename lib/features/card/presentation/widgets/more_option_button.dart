@@ -3,8 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/styling/app_colors.dart';
 
-class MoreOptionButton extends StatelessWidget {
-  const MoreOptionButton({super.key});
+class CustomAppBarrIcon extends StatelessWidget {
+  const CustomAppBarrIcon({super.key, required this.icon});
+  final IconData icon;
 
   @override
   Widget build(BuildContext context) {
@@ -19,11 +20,7 @@ class MoreOptionButton extends StatelessWidget {
       child: Center(
         child: IconButton(
           onPressed: () {},
-          icon: Icon(
-            Icons.more_horiz,
-            color: AppColors.blackColor,
-            size: 30.sp,
-          ),
+          icon: Icon(icon, color: AppColors.blackColor, size: 30.sp),
         ),
       ),
     );

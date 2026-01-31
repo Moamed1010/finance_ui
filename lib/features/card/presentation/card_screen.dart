@@ -1,10 +1,9 @@
-import 'package:financename/core/styling/app_styles.dart';
 import 'package:financename/core/widgets/spacing_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../core/widgets/back_button_widget.dart';
+import '../../../core/widgets/custom_app_bar.dart';
 import 'widgets/card_screen_list_view.dart';
-import 'widgets/more_option_button.dart';
+
 
 class CardScreen extends StatelessWidget {
   const CardScreen({super.key});
@@ -16,20 +15,7 @@ class CardScreen extends StatelessWidget {
       child: Column(
         children: [
           const HeightSpace(16),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              BackButtonWidget(),
-              Text(
-                "All Cards",
-                style: AppStyles.black16w500Style.copyWith(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              MoreOptionButton(),
-            ],
-          ),
+          CustomAppBar(title: 'All Cards',icon: Icons.more_horiz,),
           const HeightSpace(24),
           CardScreenListView(),
         ],

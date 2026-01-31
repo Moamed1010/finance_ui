@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -51,6 +50,13 @@ class PasswordChangedScreen extends StatelessWidget {
                   buttonText: 'Back to Login',
                   onPressed: () {
                     GoRouter.of(context).pushNamed(AppRoutes.loginScreen);
+                  },
+                ),
+                const HeightSpace(10),
+                PrimaryButtonWidget(
+                  buttonText: 'Back to Welcome Page',
+                  onPressed: () {
+                    GoRouter.of(context).pushNamed(AppRoutes.onBoardingScreen);
                   },
                 ),
               ],
