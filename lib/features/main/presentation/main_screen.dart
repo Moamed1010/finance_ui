@@ -2,6 +2,7 @@ import 'package:financename/core/styling/app_colors.dart';
 import 'package:financename/features/card/presentation/card_screen.dart';
 import 'package:financename/features/home/presentation/home_screen.dart';
 import 'package:financename/features/profile/presentation/profile_screen.dart';
+import 'package:financename/features/statistic/presentation/statistic_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -17,15 +18,11 @@ class _MainScreenState extends State<MainScreen> {
   List<Widget> screens = [
     const HomeScreen(),
 
+    const StatisticScreen(),
     Container(
       width: double.infinity,
       height: double.infinity,
       color: Colors.white,
-    ),
-    Container(
-      width: double.infinity,
-      height: double.infinity,
-      color: Colors.greenAccent,
     ),
     const CardScreen(),
     const ProfileScreen(),

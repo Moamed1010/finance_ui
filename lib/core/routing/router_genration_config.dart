@@ -1,5 +1,6 @@
 import 'package:financename/features/main/presentation/main_screen.dart';
 import 'package:financename/features/profile/presentation/profile_screen.dart';
+import 'package:financename/features/statistic/presentation/statistic_screen.dart';
 import 'package:go_router/go_router.dart';
 import '../../features/auth/presentation/screens/creat_new_password_screen.dart';
 import '../../features/auth/presentation/screens/forget_password_screen.dart';
@@ -64,6 +65,11 @@ class RouterGenrationConfig {
         path: AppRoutes.profileScreen,
         name: AppRoutes.profileScreen,
         builder: (context, state) => const ProfileScreen(),
+      ),
+      GoRoute(
+        path: AppRoutes.statisticScreen,
+        name: AppRoutes.statisticScreen,
+        builder: (context, state) => const StatisticScreen(),
       ),
     ],
   );

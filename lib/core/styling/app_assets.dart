@@ -8,4 +8,5 @@ class AppAssets {
   static const String layer1='assets/images/layer1.png';
   static const String layer2='assets/images/layer2.png';
   static const String visa='assets/images/visa.png';
+  static const String chart='assets/images/chart.png';
 }
