@@ -13,11 +13,11 @@ class BackButtonWidget extends StatelessWidget {
     return Align(
       alignment: Alignment.centerLeft,
       child: Container(
-        height: 41.h,
-        width: 41.w,
+        height: 48.h,
+        width: 48.w,
         decoration: BoxDecoration(
           color: Colors.transparent,
-          borderRadius: BorderRadius.circular(16.r),
+          borderRadius: BorderRadius.circular(50.r),
           border: Border.all(color: Color(0xffE8ECF4)),
         ),
         child: Center(

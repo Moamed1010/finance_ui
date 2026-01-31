@@ -5,6 +5,7 @@ import '../../features/auth/presentation/screens/forget_password_screen.dart';
 import '../../features/auth/presentation/screens/login_screen.dart';
 import '../../features/auth/presentation/screens/password_changed_screen.dart';
 import '../../features/auth/presentation/screens/register_screen.dart';
+import '../../features/card/presentation/card_screen.dart';
 import '../../features/on_boarding_screen/presentation/screens/on_boarding_screan.dart';
 import '../../features/auth/presentation/screens/verify_otp_screen.dart';
 import 'app_routes.dart';
@@ -52,6 +53,11 @@ class RouterGenrationConfig {
         path: AppRoutes.mainScreen,
         name: AppRoutes.mainScreen,
         builder: (context, state) => const MainScreen(),
+      ),
+      GoRoute(
+        path: AppRoutes.cardScreen,
+        name: AppRoutes.cardScreen,
+        builder: (context, state) => const CardScreen(),
       ),
     ],
   );

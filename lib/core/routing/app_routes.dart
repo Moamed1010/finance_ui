@@ -7,4 +7,6 @@ class AppRoutes {
   static const String passwordChangedScreen = '/passwordChangedScreen';
   static const String verifyOtpScreen = '/verifyOtpScreen';
   static const String mainScreen = '/mainScreen';
+  static const String cardScreen='/cardScreen';
+  
 }

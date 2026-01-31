@@ -1,4 +1,6 @@
 import 'package:financename/core/styling/app_colors.dart';
+import 'package:financename/features/card/presentation/card_screen.dart';
+import 'package:financename/features/home/presentation/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -12,16 +14,8 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   int currentIndx = 0;
   List<Widget> screens = [
-    Container(
-      width: double.infinity,
-      height: double.infinity,
-      color: Colors.black,
-    ),
-    Container(
-      width: double.infinity,
-      height: double.infinity,
-      color: Colors.blue,
-    ),
+    const HomeScreen(),
+
     Container(
       width: double.infinity,
       height: double.infinity,
@@ -32,6 +26,7 @@ class _MainScreenState extends State<MainScreen> {
       height: double.infinity,
       color: Colors.greenAccent,
     ),
+    const CardScreen(),
     Container(
       width: double.infinity,
       height: double.infinity,
